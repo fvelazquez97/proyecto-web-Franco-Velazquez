@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+ul {
+  padding-left: 0
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@100&display=swap");
 
 body {
@@ -510,9 +514,6 @@ footer nav li {
 
 @media (max-width: 750px) {
 
-
-
-
   /* RESPONSIVE DEL FOOTER */
   footer nav {
     flex-direction: column;
@@ -534,7 +535,7 @@ footer nav li {
 
   .divMain {
     top: 800px;
-    width: 50%;
+    width: 75%;
     font-size: 1rem;
     flex-direction: column;
     opacity: 95%;
@@ -552,6 +553,10 @@ footer nav li {
   .carousel-inner {
     display: none;
   }
+
+ .divServicios {
+  margin: 15px 0
+ }
 
   /* RESPONSIVE DE NUESTROS CLIENTES */
 
