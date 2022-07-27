@@ -178,33 +178,18 @@ footer nav li {
   margin: 0 1.5%;
 }
 
-.divServicios {
-  text-align: center;
-  border: 2px black solid;
-  border-radius: 5px;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 4px 4px 4px;
-}
-
-.padreDivServicios {
-  width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-
-.divServicios p {
-  padding: 4px;
-  width: auto;
-}
-
-.imgServicios {
+.imgCard {
   width: 6.5rem;
   margin: 0.5rem;
+  align-self: center;
+}
+
+.botonCard {
+  background-color: #393939;
+  color: white;
+  width: 50%;
+  font-size: 1.2rem;
+  align-self: center;
 }
 
 /* FIN ESTILOS PAGINA INICIO */
@@ -448,15 +433,6 @@ footer nav li {
 
   /* RESPONSIVE DEL INDEX */
 
-  .padreDivServicios {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .divServicios {
-    margin: 5px 0;
-  }
-
   .divMain {
     position: absolute;
     top: 0;
@@ -517,6 +493,7 @@ footer nav li {
 
 @media (max-width: 750px) {
   /* RESPONSIVE DEL FOOTER */
+
   footer nav {
     flex-direction: column;
     align-items: center;
@@ -554,10 +531,6 @@ footer nav li {
 
   .carousel-inner {
     display: none;
-  }
-
-  .divServicios {
-    margin: 15px 0;
   }
 
   /* RESPONSIVE DE NUESTROS CLIENTES */
