@@ -191,8 +191,6 @@ footer nav li {
   font-size: 1.2rem;
 }
 
-
-
 /* FIN ESTILOS PAGINA INICIO */
 
 /* INICIO ESTILOS PAGINA SERVICIOS */
@@ -306,36 +304,48 @@ footer nav li {
   width: 15rem;
   margin: 1rem;
   grid-area: clienteUno;
+  animation-duration: 2s;
+  animation-iteration-count: 1
 }
 
 .clienteDos {
   width: 15rem;
   margin: 2.5rem;
   grid-area: clienteDos;
+  animation-duration: 2s;
+  animation-iteration-count: 1
 }
 
 .clienteTres {
   width: 15rem;
   margin: 1rem;
   grid-area: clienteTres;
+  animation-duration: 2s;
+  animation-iteration-count: 1
 }
 
 .clienteCuatro {
   width: 15rem;
   margin: 1rem;
   grid-area: clienteCuatro;
+  animation-duration: 2s;
+  animation-iteration-count: 1
 }
 
 .clienteCinco {
   width: 12rem;
   margin: 1rem;
   grid-area: clienteCinco;
+  animation-duration: 2s;
+  animation-iteration-count: 1
 }
 
 .clienteSeis {
   width: 15rem;
   margin: 1rem;
   grid-area: clienteSeis;
+  animation-duration: 2s;
+  animation-iteration-count: 1
 }
 
 /* FIN ESTILOS PAGINA CLIENTES */
@@ -450,6 +460,10 @@ footer nav li {
     font-size: 1.7rem;
   }
 
+  .botonCard {
+    width: 50%;
+  }
+
   /* RESPONSIVE DEL FOOTER */
 
   .imgFooter {
@@ -467,6 +481,7 @@ footer nav li {
       "clienteUno clienteDos"
       "clienteTres clienteCuatro"
       "clienteCinco clienteSeis";
+      gap: 2rem;
   }
 
   /* RESPONSIVE DE SERVICIOS */
@@ -495,6 +510,7 @@ footer nav li {
 }
 
 @media (max-width: 750px) {
+
   /* RESPONSIVE DEL FOOTER */
 
   footer nav {
@@ -534,8 +550,11 @@ footer nav li {
 
   .carousel-inner {
     display: none;
-  }
+  } 
 
+  .botonCard {
+    width: 30%;
+  }
  
 
   /* RESPONSIVE DE NUESTROS CLIENTES */
