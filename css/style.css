@@ -191,6 +191,8 @@ footer nav li {
   font-size: 1.2rem;
 }
 
+
+
 /* FIN ESTILOS PAGINA INICIO */
 
 /* INICIO ESTILOS PAGINA SERVICIOS */
@@ -421,6 +423,8 @@ footer nav li {
   .divMain {
     height: fit-content;
   }
+
+
 }
 
 @media (max-width: 1000px) {
@@ -531,6 +535,8 @@ footer nav li {
   .carousel-inner {
     display: none;
   }
+
+ 
 
   /* RESPONSIVE DE NUESTROS CLIENTES */
 
