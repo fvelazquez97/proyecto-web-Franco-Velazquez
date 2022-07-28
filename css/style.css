@@ -68,6 +68,8 @@ a.nav-link:hover {
   text-align: center;
   font-weight: bold;
   margin-top: 1rem;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
 
 li {
@@ -121,6 +123,10 @@ footer nav div h3 {
 footer li a {
   color: white;
   margin: 7px 0;
+}
+
+footer li a:hover {
+  color:#56ccff
 }
 
 footer nav li {
@@ -305,7 +311,7 @@ footer nav li {
   margin: 1rem;
   grid-area: clienteUno;
   animation-duration: 2s;
-  animation-iteration-count: 1
+  animation-iteration-count: 1;
 }
 
 .clienteDos {
@@ -313,7 +319,7 @@ footer nav li {
   margin: 2.5rem;
   grid-area: clienteDos;
   animation-duration: 2s;
-  animation-iteration-count: 1
+  animation-iteration-count: 1;
 }
 
 .clienteTres {
@@ -321,7 +327,7 @@ footer nav li {
   margin: 1rem;
   grid-area: clienteTres;
   animation-duration: 2s;
-  animation-iteration-count: 1
+  animation-iteration-count: 1;
 }
 
 .clienteCuatro {
@@ -329,7 +335,7 @@ footer nav li {
   margin: 1rem;
   grid-area: clienteCuatro;
   animation-duration: 2s;
-  animation-iteration-count: 1
+  animation-iteration-count: 1;
 }
 
 .clienteCinco {
@@ -337,7 +343,7 @@ footer nav li {
   margin: 1rem;
   grid-area: clienteCinco;
   animation-duration: 2s;
-  animation-iteration-count: 1
+  animation-iteration-count: 1;
 }
 
 .clienteSeis {
@@ -345,7 +351,7 @@ footer nav li {
   margin: 1rem;
   grid-area: clienteSeis;
   animation-duration: 2s;
-  animation-iteration-count: 1
+  animation-iteration-count: 1;
 }
 
 /* FIN ESTILOS PAGINA CLIENTES */
@@ -433,8 +439,6 @@ footer nav li {
   .divMain {
     height: fit-content;
   }
-
-
 }
 
 @media (max-width: 1000px) {
@@ -481,7 +485,7 @@ footer nav li {
       "clienteUno clienteDos"
       "clienteTres clienteCuatro"
       "clienteCinco clienteSeis";
-      gap: 2rem;
+    gap: 2rem;
   }
 
   /* RESPONSIVE DE SERVICIOS */
@@ -510,7 +514,6 @@ footer nav li {
 }
 
 @media (max-width: 750px) {
-
   /* RESPONSIVE DEL FOOTER */
 
   footer nav {
@@ -550,12 +553,11 @@ footer nav li {
 
   .carousel-inner {
     display: none;
-  } 
+  }
 
   .botonCard {
     width: 30%;
   }
- 
 
   /* RESPONSIVE DE NUESTROS CLIENTES */
 
