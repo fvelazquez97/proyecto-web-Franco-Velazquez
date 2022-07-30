@@ -1,0 +1,611 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@100&display=swap");
+  
+  body {
+    font-family: "fira sans", sans-serif;
+  }
+
+  /* INICIO ESTILOS DEL HEADER */
+
+header {
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  
+    nav {
+      background-color: $color-primario;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 1s;
+    }
+  }
+  
+  .imgHeader {
+    width: 8rem;
+    padding: 4% 7% 4% 7%;
+  }
+  
+  .navbar a {
+    color: $color-secundario;
+  }
+  
+  .dropdown-menu {
+    padding: 0;
+    border: none;
+    background-color: $color-primario;
+  }
+  
+  .navbar-nav .nav-link.active, a.nav-link:hover {
+    color: cyan;
+  }
+  
+  .nav-link:focus {
+    color: $color-secundario;
+  }
+  
+  .navbar-toggler {
+    background-color: $color-secundario;
+  }
+  
+  /* FIN ESTILOS DEL HEADER */
+  
+  .hUno {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+  
+  li {
+    background-color: $color-primario;
+    color: $color-secundario;
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  main {
+    h2 {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  
+    li {
+      color: $color-primario;
+      background-color: $color-secundario;
+    }
+  }
+  
+  /* INICIO ESTILOS DEL FOOTER */
+  
+  footer {
+    background-color: $color-primario;
+    color: $color-secundario;
+  
+    nav {
+      padding: 15px 0 20px 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: top;
+  
+      div {
+        width: 25%;
+        padding: 1rem 0 0 1rem;
+        text-align: center;
+  
+        h3 {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  
+    li a {
+      color: $color-secundario;
+      margin: 7px 0;
+  
+      &:hover {
+        color: #56ccff;
+      }
+    }
+  
+    nav li {
+      margin: 7px 0;
+    }
+  }
+  
+  .imgFooter {
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 50% 7%;
+  }
+  
+  /* FIN ESTILOS DEL FOOTER */
+
+  /* INICIO ESTILOS PAGINA INICIO */
+
+.divMain {
+    width: 25%;
+    height: fit-content;
+    position: absolute;
+    top: 15%;
+    left: 67%;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    border: $color-primario 2px solid;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    background-color: $color-secundario;
+    font-size: 1.1rem;
+    opacity: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+  
+    a {
+      text-align: center;
+      background-color: $color-primario;
+      color: $color-secundario;
+      border: 2px $color-primario solid;
+      border-radius: 4px;
+      padding: 8px;
+      margin: 10px;
+    }
+  
+    p {
+      margin: 0 1.5%;
+    }
+  }
+  
+  .imgCard {
+    width: 6.5rem;
+    margin: 0.5rem;
+    align-self: center;
+  }
+  
+  .botonCard {
+    background-color: $color-primario;
+    color: $color-secundario;
+    width: 50%;
+    font-size: 1.2rem;
+  }
+  
+  /* FIN ESTILOS PAGINA INICIO */
+  
+  /* INICIO ESTILOS PAGINA SERVICIOS */
+  
+  .mainServicios {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+  
+  .selectorServicios {
+    color: $color-secundario;
+    background-color: $color-primario;
+    width: fit-content;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+    a {
+      color: $color-secundario;
+      background-color: $color-primario;
+      font-size: 1.2rem;
+      margin-top: 5px;
+  
+      &:hover {
+        color: #56ccff;
+      }
+    }
+  
+    .paginaActual {
+      color: #56ccff;
+    }
+  }
+  
+  .divServicioUno, .divServicioDos, .divServicioTres {
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 95%;
+    margin: 0 3rem 1rem 3rem;
+  }
+  
+  .imgPaginaServicios {
+    width: 5rem;
+    margin: 1rem;
+  }
+  
+  /* FIN ESTILOS PAGINA SERVICIOS */
+  
+  /* INICIO ESTILOS PAGINA NOSOTROS */
+  
+  .nosotrosMain {
+    width: 80%;
+    text-align: center;
+    margin: 15px auto;
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    h1 {
+      margin: 15px 0;
+    }
+  }
+  
+  /* FIN ESTILOS PAGINA NOSOTROS */
+
+  /* INICIO ESTILOS PAGINA CLIENTES */
+
+.mainClientes {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: fit-content;
+  
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 15px 8px 0px 8px;
+    }
+  }
+  
+  .imgClientes {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas: "clienteUno clienteDos clienteTres" "clienteCuatro clienteCinco clienteSeis";
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .clienteUno {
+    width: 15rem;
+    margin: 1rem;
+    grid-area: clienteUno;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  .clienteDos {
+    width: 15rem;
+    margin: 2.5rem;
+    grid-area: clienteDos;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  .clienteTres {
+    width: 15rem;
+    margin: 1rem;
+    grid-area: clienteTres;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  .clienteCuatro {
+    width: 15rem;
+    margin: 1rem;
+    grid-area: clienteCuatro;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  .clienteCinco {
+    width: 12rem;
+    margin: 1rem;
+    grid-area: clienteCinco;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  .clienteSeis {
+    width: 15rem;
+    margin: 1rem;
+    grid-area: clienteSeis;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  /* FIN ESTILOS PAGINA CLIENTES */
+  
+  /* INICIO ESTILOS PAGINA CONTACTO */
+  
+  .pContacto {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px 8px 15px 8px;
+  }
+  
+  .contactoPadre {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .formularioContacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 4rem 1rem 0;
+  
+    h3, i {
+      margin: 0 0 5px 0;
+    }
+  }
+  
+  .campo {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .campoWhatsapp {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .checkbox {
+    height: 18px;
+    width: 18px;
+    margin-left: 30px;
+  }
+  
+  .enviar {
+    background-color: $color-primario;
+    color: $color-secundario;
+    font-size: 130%;
+    border-radius: 8px;
+  }
+  
+  .infoContacto li {
+    font-size: 1rem;
+    margin: 1.3rem 0;
+  }
+  
+  .linkWhatsapp {
+    display: flex;
+    align-items: center;
+    margin-top: -16px;
+  }
+  
+  .imgWhatsapp {
+    width: 2rem;
+    margin-left: 8px;
+    animation-iteration-count: infinite;
+  }
+  
+  /* FIN ESTILOS PAGINA CONTACTO */
+
+  /* ********************INICIO RESPONSIVE**************** */
+
+@media (max-width: 1300px) {
+    /* RESPONSIVE DEL INDEX */
+  
+    .divMain {
+      height: fit-content;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    /* RESPONSIVE DEL NAV */
+  
+    header nav {
+      flex-direction: column;
+    }
+  
+    /* RESPONSIVE DEL INDEX */
+  
+    .divMain {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      font-size: 1rem;
+  
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  
+    .botonCard {
+      width: 50%;
+    }
+  
+    /* RESPONSIVE DEL FOOTER */
+  
+    .imgFooter {
+      display: none;
+    }
+  
+    footer nav li {
+      margin: 7px 0;
+    }
+  
+    /* RESPONSIVE DE NUESTROS CLIENTES */
+  
+    .imgClientes {
+      grid-template-areas: "clienteUno clienteDos" "clienteTres clienteCuatro" "clienteCinco clienteSeis";
+      gap: 2rem;
+    }
+  
+    /* RESPONSIVE DE SERVICIOS */
+  
+    .selectorServicios {
+      justify-content: center;
+  
+      a {
+        margin: 2rem 0;
+      }
+    }
+  
+    /* RESPONSIVE DE CONTACTO */
+  
+    .contactoPadre {
+      margin: 15px 0 20px 0;
+    }
+  
+    .campo {
+      margin: 10px 0 0 0;
+    }
+  
+    .checkbox {
+      margin-left: 25px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    /* RESPONSIVE DEL FOOTER */
+  
+    footer nav {
+      flex-direction: column;
+      align-items: center;
+  
+      div {
+        width: fit-content;
+        margin: 7px;
+      }
+    }
+  
+    /* RESPONSIVE DEL INDEX */
+  
+    .sectionIndex {
+      background-image: url(../img/electricista_mobile.jpg);
+      background-repeat: no-repeat;
+      height: 800px;
+    }
+  
+    .divMain {
+      top: 800px;
+      width: 75%;
+      font-size: 1rem;
+      flex-direction: column;
+      opacity: 95%;
+  
+      p {
+        margin: 0 0;
+        font-size: 1rem;
+      }
+  
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .carousel-inner {
+      display: none;
+    }
+  
+    .botonCard {
+      width: 30%;
+    }
+  
+    /* RESPONSIVE DE NUESTROS CLIENTES */
+  
+    .imgClientes {
+      grid-template-areas: "clienteUno" "clienteDos" "clienteTres" "clienteCuatro" "clienteCinco" "clienteSeis";
+      gap: 2rem;
+    }
+  
+    /* RESPONSIVE DE NOSOTROS */
+  
+    .nosotrosMain p {
+      margin: 15px 0;
+    }
+  
+    /* RESPONSIVE DE SERVICIOS */
+  
+    .mainServicios {
+      flex-direction: column-reverse;
+  
+      p {
+        margin-top: 20px;
+      }
+    }
+  
+    .selectorServicios {
+      align-items: center;
+      padding: 1rem 0;
+      width: 100%;
+  
+      a {
+        margin: 1rem;
+      }
+    }
+  
+    .divServicioUno, .divServicioDos, .divServicioTres {
+      width: fit-content;
+      margin: auto 15px;
+    }
+  
+    /* RESPONSIVE DE CONTACTO */
+  
+    .contactoPadre {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .formularioContacto {
+      margin: 15px 0 0 0;
+    }
+  
+    .campo {
+      padding: 8%;
+      margin: 12px 0;
+    }
+  
+    .checkbox {
+      height: 28px;
+      width: 28px;
+    }
+  
+    .campo.enviar {
+      align-self: center;
+      width: 100%;
+    }
+  
+    .infoContacto {
+      margin: 15px 0;
+      text-align: center;
+    }
+  
+    .linkWhatsapp {
+      margin: auto 0;
+      justify-content: center;
+      margin-top: -1rem;
+    }
+  }
