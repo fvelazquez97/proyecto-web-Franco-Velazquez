@@ -104,15 +104,14 @@ header {
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      align-items: top;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
   
       div {
         width: 25%;
         padding: 1rem 0 0 1rem;
-        text-align: center;
-  
+        text-align: center;  
         h3 {
           padding-bottom: 1rem;
         }
@@ -133,13 +132,11 @@ header {
     }
   }
   
-  .imgFooter {
-    width: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 50% 7%;
+  .derechos {
+    margin-top: 50px;
+    width: 100%;
   }
-  
+
   /* FIN ESTILOS DEL FOOTER */
 
   /* INICIO ESTILOS PAGINA INICIO */
@@ -448,10 +445,6 @@ header {
   
     /* RESPONSIVE DEL FOOTER */
   
-    .imgFooter {
-      display: none;
-    }
-  
     footer nav li {
       margin: 7px 0;
     }
@@ -497,7 +490,6 @@ header {
   
       div {
         width: fit-content;
-        margin: 7px;
       }
     }
   
