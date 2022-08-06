@@ -273,7 +273,12 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 1rem 4rem 1rem 0; }
+  margin: 1rem 4rem 1rem 0;
+  padding: 1.2rem;
+  border: #393939 solid 1px;
+  border-radius: 1rem;
+  background-color: #393939;
+  color: white; }
   .formularioContacto h3, .formularioContacto i {
     margin: 0 0 5px 0; }
 
@@ -281,6 +286,8 @@ footer {
   margin: 5px 0;
   padding: 8px;
   border-radius: 4px; }
+  .campo:focus {
+    background-color: #dfdfdf; }
 
 .campoWhatsapp {
   display: flex;
@@ -293,13 +300,16 @@ footer {
   margin-left: 30px; }
 
 .enviar {
-  background-color: #393939;
-  color: white;
+  background-color: white;
+  color: #393939;
   font-size: 130%;
-  border-radius: 8px; }
+  border-radius: 8px;
+  margin-top: 15px; }
+  .enviar:hover {
+    background-color: #dfdfdf; }
 
 .infoContacto li {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 1.3rem 0; }
 
 .linkWhatsapp {

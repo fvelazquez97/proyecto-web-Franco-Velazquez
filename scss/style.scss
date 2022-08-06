@@ -356,6 +356,11 @@ header {
     flex-direction: column;
     text-align: center;
     margin: 1rem 4rem 1rem 0;
+    padding: 1.2rem;
+    border: $color-primario solid 1px;
+    border-radius: 1rem;
+    background-color: $color-primario;
+    color: white;
   
     h3, i {
       margin: 0 0 5px 0;
@@ -366,6 +371,9 @@ header {
     margin: 5px 0;
     padding: 8px;
     border-radius: 4px;
+      &:focus {
+        background-color:#dfdfdf;
+      }
   }
   
   .campoWhatsapp {
@@ -381,14 +389,18 @@ header {
   }
   
   .enviar {
-    background-color: $color-primario;
-    color: $color-secundario;
+    background-color: $color-secundario;
+    color: $color-primario;
     font-size: 130%;
     border-radius: 8px;
+    margin-top: 15px;
+      &:hover {
+        background-color: #dfdfdf;
+      }
   }
   
   .infoContacto li {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 1.3rem 0;
   }
   
