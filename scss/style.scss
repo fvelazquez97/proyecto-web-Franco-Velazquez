@@ -5,10 +5,12 @@
     padding: 0;
   }
   
+  /* CORRECCION DE PROBLEMA DE ALINEACION QUE TRAIA CONSIGO BOOTSRAP*/
   ul {
     padding-left: 0;
   }
   
+
   @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@100&display=swap");
   
   body {
@@ -155,7 +157,7 @@ header {
     padding-top: 5px;
     padding-bottom: 15px;
     background-color: $color-secundario;
-    font-size: 1.1rem;
+    font-size: $fuente-ordenador;
     opacity: 90%;
     display: flex;
     flex-direction: row;
@@ -191,7 +193,7 @@ header {
     background-color: $color-primario;
     color: $color-secundario;
     width: 50%;
-    font-size: 1.2rem;
+    font-size: $fuente-ordenador;
   }
   
   /* FIN ESTILOS PAGINA INICIO */
@@ -216,7 +218,7 @@ header {
     a {
       color: $color-secundario;
       background-color: $color-primario;
-      font-size: 1.2rem;
+      font-size: $fuente-ordenador;
       margin-top: 5px;
   
       &:hover {
@@ -232,7 +234,7 @@ header {
   .divServicioUno, .divServicioDos, .divServicioTres {
     padding: 5px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: $fuente-ordenador;
     width: 95%;
     margin: 0 3rem 1rem 3rem;
   }
@@ -252,7 +254,7 @@ header {
     margin: 15px auto;
   
     p {
-      font-size: 1.2rem;
+      font-size: $fuente-ordenador;
     }
   
     h1 {
@@ -271,7 +273,7 @@ header {
     width: fit-content;
   
     p {
-      font-size: 1.2rem;
+      font-size: $fuente-ordenador;
       text-align: center;
       margin: 15px 8px 0px 8px;
     }
@@ -338,7 +340,7 @@ header {
   /* INICIO ESTILOS PAGINA CONTACTO */
   
   .pContacto {
-    font-size: 1.2rem;
+    font-size: $fuente-ordenador;
     text-align: center;
     margin: 10px 8px 15px 8px;
   }
@@ -400,7 +402,7 @@ header {
   }
   
   .infoContacto li {
-    font-size: 1.2rem;
+    font-size: $fuente-ordenador;
     margin: 1.3rem 0;
   }
   
