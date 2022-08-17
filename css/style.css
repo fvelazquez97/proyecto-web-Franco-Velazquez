@@ -46,6 +46,9 @@ header {
   background-color: white; }
 
 /* FIN ESTILOS DEL HEADER */
+h1 {
+  font-size: 2rem; }
+
 .hUno {
   text-align: center;
   font-weight: bold;
@@ -84,7 +87,7 @@ footer {
     align-items: center; }
     footer nav div {
       width: 25%;
-      padding: 1rem 0 0 1rem;
+      padding: 1rem 0 0 0rem;
       text-align: center; }
       footer nav div h3 {
         padding-bottom: 1rem; }
@@ -192,9 +195,16 @@ footer {
   text-align: center;
   margin: 15px auto; }
   .nosotrosMain p {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin-top: 25px; }
   .nosotrosMain h1 {
     margin: 15px 0; }
+
+.imgNosotros {
+  width: 200px;
+  margin-top: 8px;
+  animation-duration: 1s;
+  animation-iteration-count: 1; }
 
 /* FIN ESTILOS PAGINA NOSOTROS */
 /* INICIO ESTILOS PAGINA CLIENTES */
@@ -331,7 +341,7 @@ footer {
   .divMain {
     height: fit-content; } }
 
-@media (max-width: 1000px) {
+@media (max-width: 1120px) {
   /* RESPONSIVE DEL NAV */
   header nav {
     flex-direction: column; }
@@ -402,6 +412,8 @@ footer {
   /* RESPONSIVE DE NOSOTROS */
   .nosotrosMain p {
     margin: 15px 0; }
+  .imgNosotros {
+    display: none; }
   /* RESPONSIVE DE SERVICIOS */
   .mainServicios {
     flex-direction: column-reverse; }
