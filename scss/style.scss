@@ -239,9 +239,16 @@ header {
   .divServicioUno, .divServicioDos, .divServicioTres {
     padding: 5px;
     text-align: center;
-    font-size: $fuente-ordenador;
+    font-size: $fuente-servicios;
     width: 95%;
     margin: 0 3rem 1rem 3rem;
+
+    li {
+      font-size: 1.2rem;
+      text-align: left;
+      margin: 1.2rem;
+      list-style: square;
+    }
   }
   
   .imgPaginaServicios {
@@ -259,7 +266,7 @@ header {
     margin: 15px auto;
   
     p {
-      font-size: $fuente-ordenador;
+      font-size: 1.4rem;
       margin-top: 25px;
     }
   

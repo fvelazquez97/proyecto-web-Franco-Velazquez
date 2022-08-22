@@ -180,9 +180,14 @@ footer {
 .divServicioUno, .divServicioDos, .divServicioTres {
   padding: 5px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 95%;
   margin: 0 3rem 1rem 3rem; }
+  .divServicioUno li, .divServicioDos li, .divServicioTres li {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 1.2rem;
+    list-style: square; }
 
 .imgPaginaServicios {
   width: 5rem;
@@ -195,7 +200,7 @@ footer {
   text-align: center;
   margin: 15px auto; }
   .nosotrosMain p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 25px; }
   .nosotrosMain h1 {
     margin: 15px 0; }
